@@ -1,0 +1,17 @@
+-- Documentation
+    -- create readfromcsv file which search using profile_name from 2 csv files (keyword,profiles) and return data formated in json 
+    -- call api endpoints:
+        1. /targetproxy to send proxy informartion (username, password, ip, port)
+            -- note you can comment /targetproxy endpoint to prevent using proxy
+        2. /targetproduct to get product id 
+        3. /targetproductdata to get ApiKeys
+        4. /targetproductstock to get status of product if instock get all stores with location that have this product
+        5. /targetloginUser using puppeteer to login and get all cookies
+        6. /targetaddproduct to send product with quantity item
+        7. /targetinsertaddress to send insert address
+            -- note if you inserted address you got message that "Shipping address already present for cart"
+        8. /targetinsertpayment to send insert payment method
+        9. /targetcheckout to get last checkout
+            -- not if unvalid payment you got message that "Payment authorization failed"
+
+
